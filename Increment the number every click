@@ -1,0 +1,34 @@
+<html>
+	
+	<body>
+	
+	<br><br><br>
+	
+	<center>
+		
+		<ul id="list"></ul>
+		<li id="count">0</li>
+		<button onclick="increment();">Click Me</button>
+	</center>
+	
+	</body>
+	
+	<script>
+		
+		var count = 0;
+		
+		
+		function increment(){
+		  count++;
+		  
+		  var node = document.createElement("li");
+		  var textnode = document.createTextNode(count);
+		  node.appendChild(textnode);
+		  document.getElementById("count").appendChild(node);
+		  
+		  
+		}
+		
+	</script>
+	
+</html>
