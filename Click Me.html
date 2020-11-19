@@ -1,0 +1,52 @@
+<html>
+	
+	<body>
+	
+	<br><br><br>
+	<style type="text/css">
+div  
+{
+    border:1px solid gray;
+    border-radius: 5px;
+    padding: 15px;
+    width : 100px;
+}
+button:hover {
+  background: gray;
+  border-bottom-color: #111;
+}
+
+button:active {
+  position: relative;
+  top: 1px;
+}
+
+	</style>
+
+	
+	<center>
+		<div>
+		<p id = "count"> 0 </p>
+		<button onclick="increment();">Click Me</button>
+	</center>
+	
+	</body>
+	
+	<script>
+		
+		var count = 0;
+		var size = 15;
+		
+		function increment(){
+		  count++;
+		  var text = document.getElementById("count");
+		  text.innerHTML = count;
+		  
+		  size++;
+		  text.style.fontSize = size;
+		}
+		
+	</script>
+</div>
+	
+</html>
